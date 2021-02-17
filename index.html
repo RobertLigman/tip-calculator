@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
 </head>
 
@@ -13,7 +14,8 @@
         <div class="tip-calculator">
             <h1>Tip Calculator</h1>
             <label for="amount">Ile wynosił rachunek?</label>
-            <input type="text" name="amount" /> PLN
+            <div><input type="text" name="amount" /> PLN</div>
+
             <label for="percentage-select">Jak oceniasz usługę?</label>
             <select name="percentage-select" id="">
           <option value="thirty">30% super</option>
@@ -22,10 +24,11 @@
           <option value="five">5% słabo</option>
         </select>
             <label for="number-of-people">Ile osób składa się na napiwek</label>
-            <input type="text" name="number-of-people" /> osoby
+            <div><input type="text" name="number-of-people" /> osoby</div>
+            <button id="calculate">Oblicz</button>
             <div class="output">
                 <h3>wysokość napiwku:</h3>
-                <p>1 PLN</p>
+                <h3>1 PLN</h3>
             </div>
         </div>
     </div>
