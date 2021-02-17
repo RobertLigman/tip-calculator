@@ -13,25 +13,29 @@
     <div class="wrapper">
         <div class="tip-calculator">
             <h1>Tip Calculator</h1>
+
             <label for="amount">Ile wynosił rachunek?</label>
-            <div><input type="text" name="amount" /> PLN</div>
+            <div><input type="number" name="amount" /> PLN</div>
 
             <label for="percentage-select">Jak oceniasz usługę?</label>
-            <select name="percentage-select" id="">
+            <select name="percentage-select" id="percentage-select">
           <option value="thirty">30% super</option>
           <option value="twenty">20% bardzo dobrze</option>
           <option value="ten">10% ok</option>
           <option value="five">5% słabo</option>
         </select>
             <label for="number-of-people">Ile osób składa się na napiwek</label>
-            <div><input type="text" name="number-of-people" /> osoby</div>
+            <div><input type="number" name="number-of-people" /> osoby</div>
             <button id="calculate">Oblicz</button>
+
             <div class="output">
-                <h3>wysokość napiwku:</h3>
-                <h3>1 PLN</h3>
+                <h3>wysokość napiwku na osobę:</h3>
+                <h3></h3>
             </div>
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
